@@ -1,0 +1,28 @@
+<!-- Code for adding an MS Teams to your LibApps profile box -->
+<!-- I recommend adding it to the "Other Widget Code" section on the "My Profile" editor page. --> 
+
+<style>
+#teamschat {
+  background: #FFFFFF;
+  border: 1px solid #545AAA;
+  border-radius: 4px;
+  color: #333333;
+  font-size: 18px;
+  font-family: 'Barlow', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+</style>
+
+
+<!-- Add your email wherever it says "YOUR_EMAIL@DOMAIN.ORG". --> 
+<!-- I've replaced the src link to a wikimedia one, but it's best to upload an icon to your own storage and link to that. --> 
+<!-- Replace the part after "message=" to use any message you like. --> 
+
+
+<div id="teamschat"><a href="https://teams.microsoft.com/l/chat/0/0?users=YOUR_EMAIL@DOMAIN.ORG&message=Hi%20there%20I%20have%20a%20library-related%20question%3A%20"><img alt="Click to Chat with this librarian in Microsoft Teams" src="https://commons.wikimedia.org/wiki/File:Microsoft_Office_Teams_(2018%E2%80%93present).svg" style="border: 0px; vertical-align: middle; float: left;" /></a>
+
+<a href="https://teams.microsoft.com/l/chat/0/0?users=YOUR_EMAIL@DOMAIN.ORG&message=Hi%20there%20I%20have%20a%20library-related%20question%3A%20" target="_blank">Microsoft Teams Chat</a> 
+</div>
+
+<br />
