@@ -1,0 +1,13 @@
+ <!--Code to be copy & pasted into a LibWizard Form's Settings menu, Look n Feel, CSS section -->
+
+h2 {
+  column-span: all;
+}
+      @media (max-width: 1000px) {
+        .hidden-mobile {
+          display: none;
+        }
+      @media (max-width: 770px) {
+        .hidden-small-mobile {
+          display: none;
+      }
