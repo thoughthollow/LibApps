@@ -1,0 +1,120 @@
+ <!--Code to be copy & pasted into the LibWizard Advance Setting's Javascript box.-->
+
+setTimeout(function(){
+
+var x = document.getElementById('1f198edc61919ad59677d2f7f8be496e');
+var y = x.querySelector('button');
+y.style.display = 'none';
+
+document.getElementById('mat-radio-2').onfocus = function() {IsOn()};
+
+function IsOn() {
+y.style.display = 'block'
+};
+
+document.getElementById('mat-radio-3').onfocus = function() {IsOff()};
+
+function IsOff() {
+y.style.display = 'none'
+setTimeout(function() {
+
+setTimeout(function(){
+document.getElementById('1320601-group').onclick = function() {backupOn()};
+}, 200);
+
+function backupOn() {
+setTimeout(function(){
+document.getElementById('1318328').oninput = function() {IsOn()};
+}, 200);
+};
+
+x.getElementsByClassName('mat-radio-button')[2].onclick = function() {IsOn()};
+x.getElementsByClassName('mat-radio-button')[3].onclick = function() {IsOff()};
+
+}, 300);
+};
+
+
+document.getElementById('French').onclick = function() {useFrench()};
+
+function useFrench() {
+var SF = document.getElementsByClassName("french");
+for(var i = 0; i < SF.length; i++)
+{ SF[i].style.display = "block";
+};
+var HE = document.getElementsByClassName("english");
+for(var i = 0; i < HE.length; i++)
+{ HE[i].style.display = "none";
+
+};
+
+x.getElementsByClassName('page-title')[0].innerHTML = "Demande de comptes de livres électroniques de la Bibliothèque et Archives des Nations Unies à Genève";
+document.getElementById('1318343-label').querySelector('p').innerHTML = "Avez-vous un compte de catalogue de la Bibliothèque des Nations Unies à Genève (un compte <a href=https://libraryresources.unog.ch/global target=_blank> Global Search</a>)?";
+
+if(document.body.contains(x.querySelector('.label[for="1320601-group"'))){
+x.querySelector('.label[for="1320601-group"').querySelectorAll('span')[0].innerHTML = "Êtes-vous membre du HCDH ou du HCR?";
+};
+
+if(document.body.contains(x.querySelector('.label[for="1318347"'))){
+x.querySelector('.label[for="1318347"').querySelectorAll('span')[1].innerHTML = "Quel est le nom d'utilisateur de votre compte Global Search?";
+};
+
+x.querySelector('.label[for="1318328"').querySelectorAll('span')[0].innerHTML = "PRÉNOM";
+x.querySelector('.label[for="1318329"').querySelectorAll('span')[0].innerHTML = "NOM";
+x.querySelector('.label[for="1318358"').querySelectorAll('span')[0].innerHTML = "ADRESSE E-MAIL OFFICIELLE";
+
+x.querySelector('.label[for="1320435-group"').querySelectorAll('span')[0].innerHTML = "Je suis membre du personnel de:";
+
+if(document.body.contains(x.querySelector('.label[for="1318334"'))){
+        x.querySelector('.label[for="1318334"').querySelectorAll('span')[0].innerHTML = "DÉPARTEMENT / ORGANISATION (ou nom du bureau extérieur pour le personnel de terrain du HCR)";
+    } else if (document.getElementById('pmName')) {
+        document.getElementById('pmName').innerHTML = "NOM DE L'ÉTAT, DU TERRITOIRE OU DE L'ENTITÉ (de votre mission permanente)";
+    } else {
+        document.getElementById('instname').innerHTML = "INSTITUTION (<em>utilisez «n / a» si non applicable</em>)";
+	}
+	
+};
+
+document.getElementById('English').onclick = function() {useEnglish()};
+
+function useEnglish() {
+
+var SE = document.getElementsByClassName("english");
+for(var i = 0; i < SE.length; i++)
+{ SE[i].style.display = "block";
+};
+var HF = document.getElementsByClassName("french");
+
+for(var i = 0; i < HF.length; i++)
+{ HF[i].style.display = "none";
+
+};
+x.getElementsByClassName('page-title')[0].innerHTML = "Request for UN Library & Archives Geneva e-Book accounts";
+document.getElementById('1318343-label').querySelector('p').innerHTML = "Do you have a UN Geneva Library catalogue account (a.k.a. a <a href=https://libraryresources.unog.ch/global target=_blank>Global Search</a> account)?";
+
+if(document.body.contains(x.querySelector('.label[for="1320601-group"'))){
+x.querySelector('.label[for="1320601-group"').querySelectorAll('span')[0].innerHTML = "Are you OHCHR or UNHCR Staff?";
+};
+
+if(document.body.contains(x.querySelector('.label[for="1318347"'))){
+x.querySelector('.label[for="1318347"').querySelectorAll('span')[1].innerHTML = "What is your Global Search account username?";
+};
+
+x.querySelector('.label[for="1318328"').querySelectorAll('span')[0].innerHTML = "FIRST NAME";
+x.querySelector('.label[for="1318329"').querySelectorAll('span')[0].innerHTML = "LAST NAME";
+x.querySelector('.label[for="1318358"').querySelectorAll('span')[0].innerHTML = "OFFICIAL EMAIL ADDRESS";
+
+x.querySelector('.label[for="1320435-group"').querySelectorAll('span')[0].innerHTML = "I am a staff member of:";
+
+if(document.body.contains(x.querySelector('.label[for="1318334"'))){
+        x.querySelector('.label[for="1318334"').querySelectorAll('span')[0].innerHTML = "DEPARTMENT/ORGANISATION (or Field Office name for UNHCR field Staff)";
+    } else if (document.getElementById('pmName')) {
+        document.getElementById('pmName').innerHTML = "STATE, TERRITORY, OR ENTITY NAME (of your Permanent Mission)";
+    } else { document.getElementById('instname').innerHTML = "INSTITUTION (<em>or put N/A if not applicable</em>)"
+	}
+
+
+};
+
+
+}, 300);
