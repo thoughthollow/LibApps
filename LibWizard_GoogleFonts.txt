@@ -1,0 +1,11 @@
+ <!--Code for using Google Fonts in a LibWizard Form-->
+ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+h1 {
+  font-family: Roboto Slab !important;
+}
+
+p {
+  font-family: Roboto !important;
+}
